@@ -1,0 +1,22 @@
+== A Safari Travelers Club where Tourists can discover their next Safari Adventure across Africa  and set up travel plans conveniently from the Application ==
+
+
+Deliverables
+
+1. As  a User I should be able to choose my next travel plans , schedules and cancel at any time.
+2. As a User I should be able to explore a wide list of travel plans , filter through travel options and destinations.
+3. As a User I should be able to find the most reviewed destinations and sort ratings.
+4. As a User I should be able to see friends traveling to the every destinations.
+
+*  Layout  *
+
+1. Landing-page
+    => Awesome backdrop
+    => 
+
+* Tables *
+1. Destinations => shows the destinations available to the User
+2. Users    => table for the user see all there details
+3. Friends  => table contains all the friends of the user
+4. Ratings and reviews  => table contains all the ratings
+5. Schedules => table contains all the schedules of the users 
