@@ -6,11 +6,11 @@ Review.destroy_all
 # 50.times do
 # end
 
-mara = Destination.create(name:"Maasai Mara",location: "kenya",price:50000)
-zanzibar = Destination.create(name:"Zanzibar Island",location:"zanzibar",price:80000)
-kruger = Destination.create(name:"Kruger Island",location:"south africa",price:1200000)
-serengeti = Destination.create(name:"serengeti",location:"tanzania",price:440000)
-mana = Destination.create(name:"Mana Pools National Park",location:"zimbabwe",price: 370000)
+mara = Destination.create(name:"Maasai Mara",location: "kenya",price:50000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg")
+zanzibar = Destination.create(name:"Zanzibar Island",location:"zanzibar",price:80000,image:"https://i.postimg.cc/pdg0cfnz/hotel-1.jpg")
+kruger = Destination.create(name:"Kruger Island",location:"south africa",price:1200000,image:"https://i.postimg.cc/KzP59dbh/safari-tour.jpg")
+serengeti = Destination.create(name:"serengeti",location:"tanzania",price:440000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg")
+mana = Destination.create(name:"Mana Pools National Park",location:"zimbabwe",price: 370000,image:"https://i.postimg.cc/5NxsrNj7/jungle-1.jpg")
 
 mark = User.create(first_name: "Mark",last_name:"olo",email: "mark@gmail.com")
 joy = User.create(first_name: "Joy",last_name:"mwas",email: "joy@gmail.com")
@@ -24,6 +24,26 @@ fun = Review.create(comment: "Excilariting experience with to see the safari",ra
 bad = Review.create(comment: "Our car broke down in the desert",rating:3)
 relaxed = Review.create(comment: "Theraupetic ride throughtout the park",rating:5)
 
+# https://i.postimg.cc/DydtWM4D/beach-overlook.jpg
+# https://i.postimg.cc/Zn6Xxf7W/beach-sand.jpg
+# https://i.postimg.cc/hvR5vLDc/desert-journey.jpg
+# https://i.postimg.cc/1zgCKC4y/desertscape.jpg
+# https://i.postimg.cc/zvwPgyvW/drinks.jpg
+# https://i.postimg.cc/pXZ6V5gM/elephant-herd.jpg
+# https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg
+# https://i.postimg.cc/nhr0HR4q/giraffe.jpg
+# https://i.postimg.cc/T3NNgMdk/girraffe.jpg
+# https://i.postimg.cc/2SSX18Db/girraffe-sunset.jpg
+# https://i.postimg.cc/pdg0cfnz/hotel-1.jpg
+# https://i.postimg.cc/vBf0J4Wj/hotel-2.jpg
+# https://i.postimg.cc/5NxsrNj7/jungle-1.jpg
+# https://i.postimg.cc/3JntQ5vK/lion.jpg
+# https://i.postimg.cc/k5tsS2h4/palm-trees.jpg
+# https://i.postimg.cc/Gtbx6q38/pina-coladas.jpg
+# https://i.postimg.cc/cLzT6Rh2/safari-ambience.jpg
+# https://i.postimg.cc/KzP59dbh/safari-tour.jpg
+# https://i.postimg.cc/RhGLmKqP/savannah-sunset.jpg
+# https://i.postimg.cc/59m38dpw/starfish.jpg
 
 puts "✅ Done seeding!"
 
