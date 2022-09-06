@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.7.4"
+ruby "2.7.1"
 
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
