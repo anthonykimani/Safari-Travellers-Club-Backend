@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
 
   get "/destinations" do
     destination = Destination.all
-    destination.to_json
+    destination.to_json(include: {schedules:{include: :user}})
   end
   
   get "/destinations/:id" do
@@ -19,13 +19,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/destinations" do
-    destination = Destination.create(name:params[:name],location:params[:location],price:params[:price])
+    destination = Destination.create(name:params[:name],location:params[:location],price:params[:price],image:params[:image],category:params[:category])
     destination.to_json
   end
 
   patch "/destinations/:id" do
     destination = Destination.find(params[:id])
-    destination.update(name:params[:name],location:params[:location],price:params[:price])
+    destination.update(name:params[:name],location:params[:location],price:params[:price],image:params[:image],category:params[:category])
     destination.to_json
   end
 
@@ -48,13 +48,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/users" do
-    users = User.create(first_name:params[:first_name],last_name:params[:last_name],email:params[:email],password:params[:password])
+    users = User.create(first_name:params[:first_name],last_name:params[:last_name],email:params[:email],password:params[:password],day:params[:day],time:params[:time])
     users.to_json
   end
 
   patch "/users/:id" do
     users = User.find(params[:id])
-    users.update(first_name:params[:first_name],last_name:params[:last_name],email:params[:email])
+    users.update(first_name:params[:first_name],last_name:params[:last_name],email:params[:email],password:params[:password],day:params[:day],time:params[:time])
     users.to_json
   end
 
@@ -93,5 +93,34 @@ class ApplicationController < Sinatra::Base
     reviews.destroy
     reviews.to_json
   end
+
+    # Schedule Routes
+
+    get "/schedules" do
+      schedules = Schedule.all
+      schedules.to_json
+    end
+  
+    get "/schedules/:id" do
+      schedule = Schedule.find(params[:id])
+      schedule.to_json
+    end
+  
+    post "/schedules" do
+      schedules = Schedule.create(day:params[:day],time:params[:time],user_id:params[:user_id],destination_id:params[:destination_id])
+      schedules.to_json(include: :destinations)
+    end
+  
+    patch "/schedules/:id" do
+      schedules = Schedule.find(params[:id])
+      schedules.update(day:params[:day],time:params[:time],user_id:params[:user_id],destination_id:params[:destination_id])
+      schedules.to_json
+    end
+  
+    delete "/schedules/:id" do
+      schedules = Schedule.find(params[:id])
+      schedules.destroy
+      schedules.to_json
+    end
 
 end

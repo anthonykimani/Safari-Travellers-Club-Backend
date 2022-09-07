@@ -24,6 +24,11 @@ fun = Review.create(comment: "Excilariting experience with to see the safari",ra
 bad = Review.create(comment: "Our car broke down in the desert",rating:3)
 relaxed = Review.create(comment: "Theraupetic ride throughtout the park",rating:5)
 
+mara_trip = Schedule.create(day:"Sunday",time:"9am",user_id:2,destination_id:1)
+zanzibar_trip = Schedule.create(day:"monday",time:"4am",user_id:3,destination_id:2)
+kruger_trip = Schedule.create(day:"wednesday",time:"9pm",user_id:4,destination_id:3)
+
+
 # https://i.postimg.cc/DydtWM4D/beach-overlook.jpg
 # https://i.postimg.cc/Zn6Xxf7W/beach-sand.jpg
 # https://i.postimg.cc/hvR5vLDc/desert-journey.jpg
