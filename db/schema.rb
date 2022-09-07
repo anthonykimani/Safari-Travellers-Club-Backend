@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2022_09_07_084017) do
   create_table "reviews", force: :cascade do |t|
     t.string "comment"
     t.integer "rating"
+    t.integer "destination_id"
   end
 
   create_table "schedules", force: :cascade do |t|

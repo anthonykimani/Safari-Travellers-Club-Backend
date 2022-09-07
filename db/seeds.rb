@@ -18,11 +18,11 @@ ada = User.create(first_name: "ada",last_name:"moraa",email: "mora@gmail.com",pa
 john = User.create(first_name: "john",last_name: "deng",email: "john@gmail.com",password:"password")
 bruce = User.create(first_name: "bruce",last_name: "ontoo",email: "bruce@gmail.com",password:"password")
 
-awesome = Review.create(comment: "Awesome experience with loved ones",rating:5)
-fine = Review.create(comment: "Enjoyed the animals views of the wild",rating:4)
-fun = Review.create(comment: "Excilariting experience with to see the safari",rating:4)
-bad = Review.create(comment: "Our car broke down in the desert",rating:3)
-relaxed = Review.create(comment: "Theraupetic ride throughtout the park",rating:5)
+awesome = Review.create(comment: "Awesome experience with loved ones",rating:5,destination_id:2)
+fine = Review.create(comment: "Enjoyed the animals views of the wild",rating:4,destination_id:3)
+fun = Review.create(comment: "Excilariting experience with to see the safari",rating:4,destination_id:1)
+bad = Review.create(comment: "Our car broke down in the desert",rating:3,destination_id:2)
+relaxed = Review.create(comment: "Theraupetic ride throughtout the park",rating:5,destination_id:5)
 
 mara_trip = Schedule.create(day:"Sunday",time:"9am",user_id:2,destination_id:1)
 zanzibar_trip = Schedule.create(day:"monday",time:"4am",user_id:3,destination_id:2)

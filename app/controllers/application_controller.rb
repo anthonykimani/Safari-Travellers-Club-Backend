@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
 
   get "/destinations" do
     destination = Destination.all
-    destination.to_json(include: {schedules:{include: :user}})
+    destination.to_json(include: [:reviews,:schedules])
   end
   
   get "/destinations/:id" do
@@ -69,7 +69,7 @@ class ApplicationController < Sinatra::Base
 
   get "/reviews" do
     reviews = Review.all
-    reviews.to_json
+    reviews.to_json(include: :destination)
   end
 
   get "/reviews/:id" do
