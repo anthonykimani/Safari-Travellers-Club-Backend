@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_09_06_121832) do
     t.string "location"
     t.integer "price"
     t.string "image"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 2022_09_06_121832) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
+    t.string "password"
     t.string "schedules"
   end
 

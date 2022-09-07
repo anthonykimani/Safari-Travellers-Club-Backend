@@ -6,17 +6,17 @@ Review.destroy_all
 # 50.times do
 # end
 
-mara = Destination.create(name:"Maasai Mara",location: "kenya",price:50000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg")
-zanzibar = Destination.create(name:"Zanzibar Island",location:"zanzibar",price:80000,image:"https://i.postimg.cc/pdg0cfnz/hotel-1.jpg")
-kruger = Destination.create(name:"Kruger Island",location:"south africa",price:1200000,image:"https://i.postimg.cc/KzP59dbh/safari-tour.jpg")
-serengeti = Destination.create(name:"serengeti",location:"tanzania",price:440000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg")
-mana = Destination.create(name:"Mana Pools National Park",location:"zimbabwe",price: 370000,image:"https://i.postimg.cc/5NxsrNj7/jungle-1.jpg")
+mara = Destination.create(name:"Maasai Mara",location: "kenya",price:50000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg",category:"savannah")
+zanzibar = Destination.create(name:"Zanzibar Island",location:"zanzibar",price:80000,image:"https://i.postimg.cc/pdg0cfnz/hotel-1.jpg",category:"sandy beaches")
+kruger = Destination.create(name:"Kruger Island",location:"south africa",price:1200000,image:"https://i.postimg.cc/KzP59dbh/safari-tour.jpg",category:"savannah")
+serengeti = Destination.create(name:"serengeti",location:"tanzania",price:440000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg",category:"savannah")
+mana = Destination.create(name:"Mana Pools National Park",location:"zimbabwe",price: 370000,image:"https://i.postimg.cc/5NxsrNj7/jungle-1.jpg",category:"jungle")
 
-mark = User.create(first_name: "Mark",last_name:"olo",email: "mark@gmail.com")
-joy = User.create(first_name: "Joy",last_name:"mwas",email: "joy@gmail.com")
-ada = User.create(first_name: "ada",last_name:"moraa",email: "mora@gmail.com")
-john = User.create(first_name: "john",last_name: "deng",email: "john@gmail.com")
-bruce = User.create(first_name: "bruce",last_name: "ontoo",email: "bruce@gmail.com")
+mark = User.create(first_name: "Mark",last_name:"olo",email: "mark@gmail.com",password:"password")
+joy = User.create(first_name: "Joy",last_name:"mwas",email: "joy@gmail.com",password:"password")
+ada = User.create(first_name: "ada",last_name:"moraa",email: "mora@gmail.com",password:"password")
+john = User.create(first_name: "john",last_name: "deng",email: "john@gmail.com",password:"password")
+bruce = User.create(first_name: "bruce",last_name: "ontoo",email: "bruce@gmail.com",password:"password")
 
 awesome = Review.create(comment: "Awesome experience with loved ones",rating:5)
 fine = Review.create(comment: "Enjoyed the animals views of the wild",rating:4)

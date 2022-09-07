@@ -5,6 +5,7 @@ class CreateDestinations < ActiveRecord::Migration[6.1]
       t.string :location
       t.integer :price
       t.string :image
+      t.string :category
       t.timestamps 
     end
   end
