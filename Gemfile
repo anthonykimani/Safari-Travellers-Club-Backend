@@ -37,6 +37,8 @@ gem "sqlite3", "~> 1.4"
 
 # gem "pg"
 
+gem 'sinatra-contrib', '~> 2.2', '>= 2.2.2',require: false
+
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
@@ -55,4 +57,8 @@ group :test do
   gem "rack-test", "~> 1.1"
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
+end
+
+group :production do
+  gem 'pg', '~> 1.4', '>= 1.4.3'
 end
