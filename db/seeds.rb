@@ -11,9 +11,14 @@ zanzibar = Destination.create(name:"Zanzibar Island",location:"zanzibar",price:8
 kruger = Destination.create(name:"Kruger Island",location:"south africa",price:1200000,image:"https://i.postimg.cc/KzP59dbh/safari-tour.jpg",category:"savannah")
 serengeti = Destination.create(name:"serengeti",location:"tanzania",price:440000,image:"https://i.postimg.cc/ryGhgtyR/elephant-pov.jpg",category:"savannah")
 mana = Destination.create(name:"Mana Pools National Park",location:"zimbabwe",price: 370000,image:"https://i.postimg.cc/5NxsrNj7/jungle-1.jpg",category:"jungle")
+mala = Destination.create(name:"Mala Mala Game Reserve",location:"south africa",price:230000,image:"https://i.postimg.cc/mDyXfM9S/antelope-sunset.jpg",category:"savannah")
+south = Destination.create(name:"South Luanga National Park",location:"zambia",price:230000,image:"https://i.postimg.cc/Y9Hns8v9/elephant-herd.jpg",category:"savannah")
+kidepo = Destination.create(name:"Kidepo Valley National Park",location:"uganda",price:230000,image:"https://i.postimg.cc/NffVtNp2/magdalena-kula-manchee-Cc-VH8-Ot-TSd-I-unsplash.jpg",category:"jungle")
+katavi = Destination.create(name:"Katavi National Park",location:"Tanzania",price:230000,image:"https://i.postimg.cc/x1X4JXr0/hu-chen-C8-Eslx-PWo-Ao-unsplash.jpg",category:"jungle")
 
-mark = User.create(first_name: "Mark",last_name:"olo",email: "mark@gmail.com",password:"password")
-joy = User.create(first_name: "Joy",last_name:"mwas",email: "joy@gmail.com",password:"password")
+
+mark = User.create(first_name: "mark",last_name:"olo",email: "mark@gmail.com",password:"password")
+joy = User.create(first_name: "joy",last_name:"mwas",email: "joy@gmail.com",password:"password")
 ada = User.create(first_name: "ada",last_name:"moraa",email: "mora@gmail.com",password:"password")
 john = User.create(first_name: "john",last_name: "deng",email: "john@gmail.com",password:"password")
 bruce = User.create(first_name: "bruce",last_name: "ontoo",email: "bruce@gmail.com",password:"password")
@@ -23,10 +28,24 @@ fine = Review.create(comment: "Enjoyed the animals views of the wild",rating:4,d
 fun = Review.create(comment: "Excilariting experience with to see the safari",rating:4,destination_id:1)
 bad = Review.create(comment: "Our car broke down in the desert",rating:3,destination_id:2)
 relaxed = Review.create(comment: "Theraupetic ride throughtout the park",rating:5,destination_id:5)
+nice = Review.create(comment:"I loved the Elephants herds",rating:5 ,destination_id:1)
+refreshed = Review.create(comment:"The accomodation was perfect",rating:4 ,destination_id:1)
+blessed = Review.create(comment:"some of the services were average",rating:3 ,destination_id:1)
+annoyed = Review.create(comment:"I wasnt able to find my left over luggage",rating:2 ,destination_id:1)
+angry = Review.create(comment:"I need to talk to an official",rating:1 ,destination_id:1)
+recommends = Review.create(comment:"I have an good time with my kids and family",rating:5 ,destination_id:2)
+thanks = Review.create(comment:"we meet some interesting people",rating:4 ,destination_id:2)
+commends = Review.create(comment:"The food wasnt that delicious",rating: 3,destination_id:2)
+loves = Review.create(comment:"there was some littering",rating: 2,destination_id:2)
+discourages = Review.create(comment:"I hated the polution going on there",rating: 1,destination_id:2)
+
+
+
 
 mara_trip = Schedule.create(day:"Sunday",time:"9am",user_id:2,destination_id:1)
 zanzibar_trip = Schedule.create(day:"monday",time:"4am",user_id:3,destination_id:2)
 kruger_trip = Schedule.create(day:"wednesday",time:"9pm",user_id:4,destination_id:3)
+
 
 
 # https://i.postimg.cc/DydtWM4D/beach-overlook.jpg
